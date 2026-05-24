@@ -2,9 +2,29 @@ import type { Metadata } from 'next';
 import { Mail, Phone, MapPin, Twitter, Linkedin, Github, Instagram } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: 'Contact Us — Hire a Web & App Developer in Ahmedabad, India',
   description:
-    'Get in touch with Faxio IT. Email us at gajeraharsh283@gmail.com or find us in Ahmedabad, Gujarat, India.',
+    'Contact Faxio Tech to discuss your web app, mobile app, Shopify store, SaaS product, or AI integration project. Email hello@faxio.in — based in Ahmedabad, Gujarat, India. Fast response guaranteed.',
+  keywords: [
+    'contact web developer India',
+    'hire web developer Ahmedabad',
+    'software development inquiry India',
+    'Next.js developer for hire',
+    'React developer Ahmedabad',
+    'Shopify developer India contact',
+    'SaaS developer India',
+    'AI developer for hire India',
+    'software agency contact Ahmedabad Gujarat',
+    'get web app quote India',
+  ],
+  alternates: { canonical: 'https://faxio.in/contact' },
+  openGraph: {
+    title: 'Contact Faxio Tech — Hire a Web & App Developer in India',
+    description:
+      'Reach out to Faxio Tech for web development, mobile apps, Shopify, SaaS, or AI integration. Ahmedabad, Gujarat, India.',
+    url: 'https://faxio.in/contact',
+    images: [{ url: 'https://faxio.in/og-image.svg', width: 1200, height: 630, alt: 'Contact Faxio Tech' }],
+  },
 };
 
 const socialLinks = [
@@ -14,9 +34,50 @@ const socialLinks = [
   { icon: Instagram, href: '#', label: 'Instagram' },
 ];
 
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  '@id': 'https://faxio.in/contact/#webpage',
+  url: 'https://faxio.in/contact',
+  name: 'Contact Faxio Tech',
+  description: 'Contact page for Faxio Tech software development agency in Ahmedabad, India.',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://faxio.in' },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://faxio.in/contact' },
+    ],
+  },
+  mainEntity: {
+    '@type': 'LocalBusiness',
+    name: 'Faxio Tech',
+    url: 'https://faxio.in',
+    email: 'hello@faxio.in',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Thakkar Ba Nagar',
+      addressLocality: 'Ahmedabad',
+      addressRegion: 'Gujarat',
+      postalCode: '380001',
+      addressCountry: 'IN',
+    },
+    geo: { '@type': 'GeoCoordinates', latitude: 23.0225, longitude: 72.5714 },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
+  },
+};
+
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-20 bg-white">
         <div className="container">
@@ -43,7 +104,7 @@ export default function ContactPage() {
             <div className="grid sm:grid-cols-3 gap-5 mb-12">
               {/* Email */}
               <a
-                href="mailto:gajeraharsh283@gmail.com"
+                href="mailto:hello@faxio.in"
                 className="group card p-7 text-center hover:-translate-y-1.5 transition-all
                            duration-300 hover:border-blue-200 hover:shadow-lg"
               >
@@ -57,7 +118,7 @@ export default function ContactPage() {
                 </p>
                 <p className="text-sm font-semibold text-gray-900 group-hover:text-blue-600
                               transition-colors break-all">
-                  gajeraharsh283@gmail.com
+                  hello@faxio.in
                 </p>
               </a>
 
@@ -118,13 +179,13 @@ export default function ContactPage() {
                   4 business hours.
                 </p>
                 <a
-                  href="mailto:gajeraharsh283@gmail.com"
+                  href="mailto:hello@faxio.in"
                   className="inline-flex items-center gap-2 bg-white text-blue-700 hover:bg-blue-50
                              font-semibold px-8 py-4 rounded-xl transition-all duration-200
                              shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm"
                 >
                   <Mail className="w-4 h-4" />
-                  gajeraharsh283@gmail.com
+                  hello@faxio.in
                 </a>
               </div>
             </div>

@@ -4,9 +4,29 @@ import { projects } from '@/lib/data/portfolio';
 import ContactCTA from '@/components/home/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Portfolio — SaaS, Mobile Apps, Shopify & Web Projects',
   description:
-    'Explore projects built by Faxio IT — SaaS platforms, headless e-commerce stores, mobile apps, and analytics dashboards.',
+    'Explore real projects built by Faxio Tech — SaaS platforms, headless Shopify e-commerce stores, React Native mobile apps, analytics dashboards, and AI-powered web applications.',
+  keywords: [
+    'software development portfolio India',
+    'web app portfolio',
+    'SaaS project examples',
+    'Shopify development portfolio',
+    'React Native app portfolio',
+    'mobile app projects India',
+    'Next.js project examples',
+    'Faxio Tech projects',
+    'software agency work Ahmedabad',
+    'web development case studies India',
+  ],
+  alternates: { canonical: 'https://faxio.in/portfolio' },
+  openGraph: {
+    title: 'Portfolio — SaaS, Mobile Apps, Shopify & Web Projects | Faxio Tech',
+    description:
+      'Real projects: SaaS platforms, Shopify stores, React Native apps, dashboards, and AI-powered solutions built by Faxio Tech.',
+    url: 'https://faxio.in/portfolio',
+    images: [{ url: 'https://faxio.in/og-image.svg', width: 1200, height: 630, alt: 'Faxio Tech Portfolio' }],
+  },
 };
 
 const accentMap: Record<string, string> = {

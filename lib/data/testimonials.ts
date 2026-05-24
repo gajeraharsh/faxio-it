@@ -15,7 +15,7 @@ export const testimonials: Testimonial[] = [
     role: 'CEO',
     company: 'CloudVault Inc.',
     quote:
-      'Faxio IT transformed our legacy platform into a modern SaaS product in under 4 months. Their Next.js architecture cut our page load times by 70% and the team communicated every step of the way.',
+      'Faxio Tech transformed our legacy platform into a modern SaaS product in under 4 months. Their Next.js architecture cut our page load times by 70% and the team communicated every step of the way.',
     rating: 5,
     avatar: 'SM',
   },
@@ -35,7 +35,7 @@ export const testimonials: Testimonial[] = [
     role: 'Founder',
     company: 'Luminary Boutique',
     quote:
-      "Our Shopify conversion rate jumped 38% after Faxio IT rebuilt our storefront. The headless architecture they chose was exactly what we needed for the performance gains we'd been chasing for years.",
+      "Our Shopify conversion rate jumped 38% after Faxio Tech rebuilt our storefront. The headless architecture they chose was exactly what we needed for the performance gains we'd been chasing for years.",
     rating: 5,
     avatar: 'OR',
   },
@@ -45,7 +45,7 @@ export const testimonials: Testimonial[] = [
     role: 'Product Manager',
     company: 'HealthFirst',
     quote:
-      'Working with Faxio IT on our HIPAA-compliant platform gave us confidence at every level — architecture, security, and execution. They think like product engineers, not just coders.',
+      'Working with Faxio Tech on our HIPAA-compliant platform gave us confidence at every level — architecture, security, and execution. They think like product engineers, not just coders.',
     rating: 5,
     avatar: 'JO',
   },
@@ -55,7 +55,7 @@ export const testimonials: Testimonial[] = [
     role: 'Director of Engineering',
     company: 'ScaleOps',
     quote:
-      'Faxio IT built our GraphQL API layer and analytics dashboard in 6 weeks. The code quality was exceptional — our internal engineers were impressed with the structure and test coverage they left behind.',
+      'Faxio Tech built our GraphQL API layer and analytics dashboard in 6 weeks. The code quality was exceptional — our internal engineers were impressed with the structure and test coverage they left behind.',
     rating: 5,
     avatar: 'PS',
   },

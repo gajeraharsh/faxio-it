@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: "Faxio IT's terms and conditions governing use of our website and services.",
+  description: "Faxio Tech's terms and conditions governing use of our website and services.",
 };
 
 export default function TermsPage() {
@@ -26,8 +26,8 @@ export default function TermsPage() {
 
             <div>
               <p>
-                These Terms and Conditions ("Terms") govern your access to and use of the Faxio IT
-                website at <strong>faxioit.com</strong> ("Site") and any services offered by Faxio IT
+                These Terms and Conditions ("Terms") govern your access to and use of the Faxio Tech
+                website at <strong>faxioit.com</strong> ("Site") and any services offered by Faxio Tech
                 ("Company," "we," "us," or "our"). By accessing the Site or engaging our services,
                 you agree to be bound by these Terms. If you do not agree, please do not use the Site.
               </p>
@@ -67,7 +67,7 @@ export default function TermsPage() {
               <h2>3. Intellectual Property</h2>
               <p>
                 All content on the Site — including but not limited to text, graphics, logos,
-                design, code, and imagery — is the property of Faxio IT or its licensors and is
+                design, code, and imagery — is the property of Faxio Tech or its licensors and is
                 protected by copyright, trademark, and other intellectual property laws.
               </p>
               <p>
@@ -134,7 +134,7 @@ export default function TermsPage() {
             <div>
               <h2>8. Indemnification</h2>
               <p>
-                You agree to defend, indemnify, and hold harmless Faxio IT and its affiliates,
+                You agree to defend, indemnify, and hold harmless Faxio Tech and its affiliates,
                 officers, directors, employees, and agents from any claims, damages, losses,
                 liabilities, costs, and expenses (including attorneys' fees) arising from: (a) your
                 use of the Site, (b) your violation of these Terms, or (c) your violation of any
@@ -178,7 +178,7 @@ export default function TermsPage() {
               <h2>12. Entire Agreement</h2>
               <p>
                 These Terms, together with our Privacy Policy, constitute the entire agreement
-                between you and Faxio IT with respect to your use of the Site, and supersede all
+                between you and Faxio Tech with respect to your use of the Site, and supersede all
                 prior agreements and understandings.
               </p>
             </div>
@@ -196,9 +196,9 @@ export default function TermsPage() {
               <h2>14. Contact Information</h2>
               <p>Questions about these Terms? Contact us:</p>
               <ul>
-                <li><strong>Email:</strong> <a href="mailto:gajeraharsh283@gmail.com">gajeraharsh283@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:hello@faxio.in">hello@faxio.in</a></li>
                 <li><strong>Phone:</strong> +1 (555) 000-0000</li>
-                <li><strong>Address:</strong> Faxio IT, San Francisco, CA, USA</li>
+                <li><strong>Address:</strong> Faxio Tech, San Francisco, CA, USA</li>
               </ul>
             </div>
           </div>

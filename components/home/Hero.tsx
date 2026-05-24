@@ -12,8 +12,8 @@ const stats = [
 ];
 
 const highlights = [
-  'Next.js & React Experts',
-  'Mobile-First Approach',
+  'Web & Mobile Development',
+  'AI API Integration',
   'On-Time Delivery',
 ];
 
@@ -72,8 +72,9 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-8 max-w-xl"
             >
-              Faxio IT is a modern software development agency. We craft web apps, mobile apps,
-              Shopify stores, and SaaS platforms that perform — and delight users.
+              We build modern web applications and AI-powered solutions using advanced APIs —
+              helping businesses automate workflows, scale faster, and deliver smarter digital
+              products.
             </motion.p>
 
             {/* Highlights */}
@@ -98,7 +99,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link href="mailto:gajeraharsh283@gmail.com" className="btn-primary text-base px-8 py-4">
+              <Link href="/contact" className="btn-primary text-base px-8 py-4">
                 Start Your Project
                 <ArrowRight className="w-4 h-4" />
               </Link>

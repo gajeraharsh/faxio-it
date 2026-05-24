@@ -1,14 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { Zap, Mail, Phone, MapPin, Twitter, Linkedin, Github, Instagram } from 'lucide-react';
+import Image from 'next/image';
+import { Mail, Phone, MapPin, Twitter, Linkedin, Github, Instagram } from 'lucide-react';
 
 const footerLinks = {
   company: [
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
     { label: 'Portfolio', href: '/portfolio' },
-    { label: 'Contact', href: 'mailto:gajeraharsh283@gmail.com' },
+    { label: 'Contact', href: '/contact' },
   ],
   services: [
     { label: 'Web Development', href: '/services#web-development' },
@@ -38,27 +39,28 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <Zap className="w-4 h-4 text-white" />
-              </div>
-              <span className="text-xl font-bold font-display text-white">
-                Faxio<span className="text-blue-400"> IT</span>
-              </span>
+            <Link href="/" className="flex items-center mb-4">
+              <Image
+                src="/logo-white.svg"
+                alt="Faxio Tech"
+                width={148}
+                height={38}
+                className="h-9 w-auto"
+              />
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-sm">
               We build fast, scalable, production-ready web and mobile products for startups and
-              growing companies. Based in Gujarat, India, working globally.
+              growing companies. Based in Ahmedabad, Gujarat — working globally.
             </p>
 
             {/* Contact info */}
             <div className="space-y-2.5 text-sm">
               <a
-                href="mailto:gajeraharsh283@gmail.com"
+                href="mailto:hello@faxio.in"
                 className="flex items-center gap-2.5 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4 text-blue-400 shrink-0" />
-                gajeraharsh283@gmail.com
+                hello@faxio.in
               </a>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
@@ -159,7 +161,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row
                         items-center justify-between gap-4 text-sm">
-          <p>© {new Date().getFullYear()} Faxio IT. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Faxio Tech. All rights reserved.</p>
           <p className="text-gray-600">All rights reserved.</p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: "Faxio IT's privacy policy — how we collect, use, and protect your personal information.",
+  description: "Faxio Tech's privacy policy — how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
 
             <div>
               <p>
-                Faxio IT ("Company," "we," "us," or "our") operates the website{' '}
+                Faxio Tech ("Company," "we," "us," or "our") operates the website{' '}
                 <strong>faxioit.com</strong> ("Site"). This Privacy Policy explains how we collect,
                 use, disclose, and safeguard your information when you visit our Site or engage our
                 services. By using the Site, you consent to the data practices described in this policy.
@@ -146,7 +146,7 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p>
                 To exercise any of these rights, contact us at{' '}
-                <a href="mailto:gajeraharsh283@gmail.com">gajeraharsh283@gmail.com</a>.
+                <a href="mailto:hello@faxio.in">hello@faxio.in</a>.
               </p>
             </div>
 
@@ -184,9 +184,9 @@ export default function PrivacyPolicyPage() {
               <h2>11. Contact Us</h2>
               <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
               <ul>
-                <li><strong>Email:</strong> <a href="mailto:gajeraharsh283@gmail.com">gajeraharsh283@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:hello@faxio.in">hello@faxio.in</a></li>
                 <li><strong>Phone:</strong> +1 (555) 000-0000</li>
-                <li><strong>Address:</strong> Faxio IT, San Francisco, CA, USA</li>
+                <li><strong>Address:</strong> Faxio Tech, San Francisco, CA, USA</li>
               </ul>
             </div>
           </div>

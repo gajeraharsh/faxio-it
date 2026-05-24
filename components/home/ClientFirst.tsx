@@ -144,7 +144,7 @@ export default function ClientFirst() {
             </p>
           </div>
           <a
-            href="mailto:gajeraharsh283@gmail.com"
+            href="/contact"
             className="shrink-0 btn-primary text-sm py-3 px-6"
           >
             Start a Conversation

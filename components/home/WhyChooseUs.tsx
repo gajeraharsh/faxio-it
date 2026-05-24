@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
             Let's scope your project — free consultation, no obligation.
           </h3>
           <a
-            href="mailto:gajeraharsh283@gmail.com"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-white text-blue-700 hover:bg-blue-50
                        font-semibold px-8 py-4 rounded-xl transition-colors text-sm"
           >

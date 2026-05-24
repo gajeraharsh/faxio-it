@@ -4,21 +4,40 @@ import { ArrowRight, Users, Award, Globe, TrendingUp } from 'lucide-react';
 import ContactCTA from '@/components/home/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Us — Faxio Tech Software Development Agency Ahmedabad',
   description:
-    'Learn about Faxio IT — who we are, what drives us, and how we help startups and growing companies build better software products.',
+    'Faxio Tech was founded in 2022 by Harsh Gajera in Ahmedabad, Gujarat. We are a software development agency helping startups and businesses build scalable web apps, mobile apps, SaaS products, and AI-powered solutions.',
+  keywords: [
+    'about Faxio Tech',
+    'software development agency Ahmedabad',
+    'Harsh Gajera developer',
+    'web development company Gujarat India',
+    'Next.js developer Ahmedabad',
+    'full stack developer Gujarat',
+    'startup software agency India',
+    'React developer India',
+    'software company founded 2022',
+  ],
+  alternates: { canonical: 'https://faxio.in/about' },
+  openGraph: {
+    title: 'About Faxio Tech — Software Development Agency in Ahmedabad, India',
+    description:
+      'Founded in 2022 by Harsh Gajera. We help startups and businesses build scalable web apps, mobile apps, SaaS, Shopify stores, and AI-powered products.',
+    url: 'https://faxio.in/about',
+    images: [{ url: 'https://faxio.in/og-image.svg', width: 1200, height: 630, alt: 'About Faxio Tech' }],
+  },
 };
 
 const founder = {
   name: 'Harsh Gajera',
   role: 'Founder & Full-Stack Developer',
-  bio: 'Passionate full-stack developer with 4+ years of experience building web and mobile products. Specializes in Next.js, React, React Native, Firebase, and Shopify. Founder of Faxio IT, helping startups and businesses bring their ideas to life.',
+  bio: 'Passionate full-stack developer with 4+ years of experience building web and mobile products. Specializes in Next.js, React, React Native, Firebase, and Shopify. Founder of Faxio Tech, helping startups and businesses bring their ideas to life.',
   avatar: 'HG',
   gradient: 'from-blue-500 to-indigo-600',
 };
 
 const milestones = [
-  { year: '2022', event: 'Faxio IT founded in Ahmedabad, Gujarat by Harsh Gajera' },
+  { year: '2022', event: 'Faxio Tech founded in Ahmedabad, Gujarat by Harsh Gajera' },
   { year: '2023', event: 'Delivered first 2 client projects. Expanded into mobile app development with React Native' },
   { year: '2024', event: 'Launched Shopify & SaaS service offerings. Grew to 5 happy clients' },
   { year: '2025', event: 'Added Firebase integration and AI-powered features to the service stack' },
@@ -32,14 +51,50 @@ const numbers = [
   { icon: TrendingUp, value: '98%', label: 'Client Satisfaction', color: 'bg-orange-100 text-orange-600' },
 ];
 
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  '@id': 'https://faxio.in/about/#webpage',
+  url: 'https://faxio.in/about',
+  name: 'About Faxio Tech',
+  description: 'Faxio Tech software development agency founded in 2022 by Harsh Gajera in Ahmedabad, Gujarat, India.',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://faxio.in' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://faxio.in/about' },
+    ],
+  },
+  mainEntity: {
+    '@type': 'Person',
+    '@id': 'https://faxio.in/about/#founder',
+    name: 'Harsh Gajera',
+    jobTitle: 'Founder & Full-Stack Developer',
+    worksFor: { '@type': 'Organization', name: 'Faxio Tech', url: 'https://faxio.in' },
+    knowsAbout: ['Next.js', 'React', 'React Native', 'Firebase', 'Shopify', 'TypeScript', 'Node.js', 'AI Integration'],
+    url: 'https://faxio.in/about',
+    email: 'hello@faxio.in',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Ahmedabad',
+      addressRegion: 'Gujarat',
+      addressCountry: 'IN',
+    },
+  },
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-20 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="section-label mb-4">About Faxio IT</span>
+            <span className="section-label mb-4">About Faxio Tech</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-display text-gray-900
                            leading-tight mt-4 mb-6">
               Small Team. <span className="gradient-text">Big Execution.</span>
@@ -80,19 +135,19 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Faxio IT was founded in 2022 by Harsh Gajera — a developer who got tired of
+                  Faxio Tech was founded in 2022 by Harsh Gajera — a developer who got tired of
                   watching clients struggle with agencies that over-promised and under-delivered.
                   The goal was simple: build software with the same care and urgency you'd bring
                   to your own product.
                 </p>
                 <p>
-                  Starting from Ahmedabad, Gujarat, Faxio IT grew from a solo venture to a
+                  Starting from Ahmedabad, Gujarat, Faxio Tech grew from a solo venture to a
                   focused practice serving clients across web, mobile, e-commerce, and SaaS.
                   The hypothesis — that quality and speed aren't mutually exclusive — has been
                   proven right on every project since.
                 </p>
                 <p>
-                  Today, Faxio IT delivers production-grade web apps, React Native mobile apps,
+                  Today, Faxio Tech delivers production-grade web apps, React Native mobile apps,
                   Shopify storefronts, and Firebase-powered SaaS products. Every engagement gets
                   the same intensity as the first — because reputation is built one project at a time.
                 </p>
@@ -142,11 +197,11 @@ export default function AboutPage() {
               <p className="text-blue-600 text-sm font-medium mb-4">{founder.role}</p>
               <p className="text-sm text-gray-600 leading-relaxed">{founder.bio}</p>
               <a
-                href="mailto:gajeraharsh283@gmail.com"
+                href="/contact"
                 className="inline-flex items-center gap-2 mt-5 text-sm font-medium text-blue-600
                            hover:text-blue-700 transition-colors"
               >
-                gajeraharsh283@gmail.com
+                hello@faxio.in
               </a>
             </div>
           </div>

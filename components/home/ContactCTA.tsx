@@ -44,7 +44,7 @@ export default function ContactCTA() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="mailto:gajeraharsh283@gmail.com"
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-white text-blue-700 hover:bg-blue-50
                            font-semibold px-8 py-4 rounded-xl transition-all duration-200
                            shadow-lg hover:shadow-xl hover:-translate-y-0.5"

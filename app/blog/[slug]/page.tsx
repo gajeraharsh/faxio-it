@@ -15,15 +15,46 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return { title: 'Not Found' };
+
+  const postUrl = `https://faxio.in/blog/${post.slug}`;
+
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: [
+      ...post.tags,
+      'Faxio Tech blog',
+      'software development article India',
+      'web development tips',
+      'Next.js tutorial',
+      post.category,
+    ],
+    authors: [{ name: post.author }],
+    alternates: { canonical: postUrl },
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      url: postUrl,
       type: 'article',
       publishedTime: post.publishDate,
       authors: [post.author],
+      tags: post.tags,
+      siteName: 'Faxio Tech',
+      images: [
+        {
+          url: 'https://faxio.in/og-image.svg',
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      creator: '@faxiotech',
+      images: ['https://faxio.in/og-image.svg'],
     },
   };
 }
@@ -59,8 +90,50 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     return content.trim();
   }
 
+  const postUrl = `https://faxio.in/blog/${post.slug}`;
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${postUrl}/#article`,
+    headline: post.title,
+    description: post.excerpt,
+    url: postUrl,
+    datePublished: post.publishDate,
+    dateModified: post.publishDate,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+      jobTitle: post.authorRole,
+      worksFor: { '@type': 'Organization', name: 'Faxio Tech', url: 'https://faxio.in' },
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Faxio Tech',
+      url: 'https://faxio.in',
+      logo: { '@type': 'ImageObject', url: 'https://faxio.in/logo.svg' },
+    },
+    image: { '@type': 'ImageObject', url: 'https://faxio.in/og-image.svg', width: 1200, height: 630 },
+    keywords: post.tags.join(', '),
+    articleSection: post.category,
+    inLanguage: 'en-US',
+    isPartOf: { '@type': 'Blog', name: 'Faxio Tech Blog', url: 'https://faxio.in/blog' },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://faxio.in' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://faxio.in/blog' },
+        { '@type': 'ListItem', position: 3, name: post.title, item: postUrl },
+      ],
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-12 bg-white">
         <div className="container">
@@ -181,7 +254,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   <p className="font-bold text-gray-900">{post.author}</p>
                   <p className="text-blue-600 text-sm font-medium mb-2">{post.authorRole}</p>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Member of the Faxio IT engineering team. Writes about modern web development,
+                    Member of the Faxio Tech engineering team. Writes about modern web development,
                     architecture, and building software products that scale.
                   </p>
                 </div>

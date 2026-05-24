@@ -4,9 +4,31 @@ import { Clock, Calendar, ArrowRight } from 'lucide-react';
 import { blogPosts } from '@/lib/data/blogs';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog — Next.js, React, Shopify, SaaS & AI Development Insights',
   description:
-    'Practical insights on Next.js, React, Shopify development, Firebase, SaaS, and modern web development from the Faxio IT engineering team.',
+    'Practical engineering articles from Faxio Tech on Next.js, React, React Native, Shopify development, Firebase, SaaS architecture, and AI integration. No fluff — real insights from production.',
+  keywords: [
+    'Next.js tutorial blog',
+    'React development blog India',
+    'Shopify development tips',
+    'SaaS development articles',
+    'Firebase tutorial',
+    'AI web development blog',
+    'software engineering blog India',
+    'web development insights',
+    'React Native tips',
+    'TypeScript best practices',
+    'Faxio Tech blog',
+  ],
+  alternates: { canonical: 'https://faxio.in/blog' },
+  openGraph: {
+    title: 'Blog — Next.js, React, Shopify, SaaS & AI Development Insights | Faxio Tech',
+    description:
+      'Engineering insights from Faxio Tech on Next.js, Shopify, Firebase, SaaS, and AI development. Practical articles with no fluff.',
+    url: 'https://faxio.in/blog',
+    type: 'website',
+    images: [{ url: 'https://faxio.in/og-image.svg', width: 1200, height: 630, alt: 'Faxio Tech Blog' }],
+  },
 };
 
 const categoryColors: Record<string, string> = {
@@ -32,7 +54,7 @@ export default function BlogPage() {
       <section className="pt-32 pb-20 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="section-label mb-4">The Faxio IT Blog</span>
+            <span className="section-label mb-4">The Faxio Tech Blog</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-display text-gray-900
                            leading-tight mt-4 mb-6">
               Engineering <span className="gradient-text">Insights</span>

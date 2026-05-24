@@ -116,7 +116,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 Next.js in 2026 isn't just a good framework — it's a complete platform for web development. Its hybrid rendering model, Server Components, performance tooling, and world-class DX make it the right choice for virtually every production web application. If you're starting a new project, the question isn't *whether* to use Next.js — it's how to make the most of it.
 
-At **Faxio IT**, every web project we ship is built on Next.js. [Get in touch](mailto:gajeraharsh283@gmail.com) to see how we can help you build something fast, scalable, and beautiful.
+At **Faxio Tech**, every web project we ship is built on Next.js. [Get in touch](/contact) to see how we can help you build something fast, scalable, and beautiful.
     `,
   },
   {
@@ -207,7 +207,7 @@ The development investment paid back in under four months.
 
 Custom Shopify app development isn't just for enterprise merchants. For any growing brand that's hitting the ceiling of what off-the-shelf tools can deliver, it's the highest-ROI tech investment you can make.
 
-At **Faxio IT**, we specialize in Shopify app development using the full stack — Remix, React, Shopify Functions, and the Admin API. [Talk to our team](mailto:gajeraharsh283@gmail.com) about what's possible for your store.
+At **Faxio Tech**, we specialize in Shopify app development using the full stack — Remix, React, Shopify Functions, and the Admin API. [Talk to our team](/contact) about what's possible for your store.
     `,
   },
   {
@@ -321,7 +321,7 @@ Bare React cannot use Server Components — they're a Next.js (and framework) fe
 
 If you're starting a new project today and it has a public-facing URL, use Next.js. The framework overhead is minimal, the performance benefits are immediate, and the DX has never been better.
 
-Reach out to the team at **Faxio IT** if you'd like guidance on which architecture makes sense for your specific use case.
+Reach out to the team at **Faxio Tech** if you'd like guidance on which architecture makes sense for your specific use case.
     `,
   },
   {
@@ -450,7 +450,7 @@ At that point, migrating critical data to PostgreSQL while keeping Firebase for 
 
 ## Our Firebase SaaS Stack
 
-At Faxio IT, our standard Firebase SaaS stack looks like this:
+At Faxio Tech, our standard Firebase SaaS stack looks like this:
 
 - **Next.js** (App Router) for the frontend
 - **Firebase Auth** for authentication
@@ -462,7 +462,7 @@ At Faxio IT, our standard Firebase SaaS stack looks like this:
 
 This stack lets a team of three engineers ship a production SaaS product in 8–10 weeks. We've done it repeatedly.
 
-[Get in touch](mailto:gajeraharsh283@gmail.com) to talk about how we can help you build your next SaaS faster.
+[Get in touch](/contact) to talk about how we can help you build your next SaaS faster.
     `,
   },
   {
@@ -536,7 +536,7 @@ Computer vision in mobile apps is mainstream in 2026. Barcode scanning, document
 Beyond code generation, AI has transformed the surrounding process:
 
 ### Automated Code Review
-AI code reviewers (Sourcery, CodeRabbit, custom GPT-4 pipelines) now flag security vulnerabilities, performance anti-patterns, and logic errors in pull requests before a human reviewer even looks. At Faxio IT, our CI pipeline catches ~40% of review issues automatically.
+AI code reviewers (Sourcery, CodeRabbit, custom GPT-4 pipelines) now flag security vulnerabilities, performance anti-patterns, and logic errors in pull requests before a human reviewer even looks. At Faxio Tech, our CI pipeline catches ~40% of review issues automatically.
 
 ### AI-Generated Tests
 Writing unit and integration tests is a task AI handles well. Given a function and a description of its behavior, modern models generate comprehensive test suites with edge cases that human developers frequently miss.
@@ -564,7 +564,7 @@ If you're building a web or mobile product in 2026:
 
 The future of web and mobile development isn't AI *replacing* engineers — it's AI *multiplying* what small, excellent engineering teams can build and ship.
 
-At **Faxio IT**, we build AI-native web and mobile products that leverage these capabilities pragmatically. [Let's talk](mailto:gajeraharsh283@gmail.com) about what's possible.
+At **Faxio Tech**, we build AI-native web and mobile products that leverage these capabilities pragmatically. [Let's talk](/contact) about what's possible.
     `,
   },
 ];

@@ -1,0 +1,29 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mark-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="40" height="40" rx="9" fill="url(#mark-grad)"/>
+
+  <!-- F vertical bar -->
+  <rect x="10" y="10" width="4.5" height="21" rx="2.25" fill="white"/>
+
+  <!-- F top bar -->
+  <rect x="10" y="10" width="19" height="4.5" rx="2.25" fill="white"/>
+
+  <!-- F middle bar -->
+  <rect x="10" y="17.5" width="13" height="4" rx="2" fill="white"/>
+
+  <!-- Circuit node — top-right end of top bar -->
+  <circle cx="29" cy="12.25" r="2.8" fill="white" fill-opacity="0.55"/>
+
+  <!-- Circuit node — right end of middle bar -->
+  <circle cx="23" cy="19.5" r="2.2" fill="white" fill-opacity="0.4"/>
+
+  <!-- Small connector line from top-right node -->
+  <rect x="28.5" y="15.5" width="1.5" height="5" rx="0.75" fill="white" fill-opacity="0.3"/>
+</svg>

@@ -7,9 +7,34 @@ import { services } from '@/lib/data/services';
 import ContactCTA from '@/components/home/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Services — Web, Mobile, Shopify, SaaS & AI Development',
   description:
-    'Faxio IT offers web development, mobile app development, Shopify development, SaaS development, UI/UX design, API development, Firebase integration, and e-commerce solutions.',
+    'Faxio Tech offers web app development, React Native mobile apps, Shopify custom themes & apps, SaaS product development, UI/UX design, Firebase integration, API development, and AI-powered solutions for businesses in India and globally.',
+  keywords: [
+    'web development services India',
+    'mobile app development services',
+    'Shopify development services',
+    'SaaS product development',
+    'UI UX design services India',
+    'Firebase integration services',
+    'API development services',
+    'AI chatbot development service',
+    'AI SaaS development',
+    'React Native development',
+    'Next.js web development',
+    'e-commerce development India',
+    'headless Shopify development',
+    'custom web app development',
+    'software development services Ahmedabad',
+  ],
+  alternates: { canonical: 'https://faxio.in/services' },
+  openGraph: {
+    title: 'Services — Web, Mobile, Shopify, SaaS & AI Development | Faxio Tech',
+    description:
+      'From Next.js web apps to React Native mobile apps, Shopify stores, SaaS platforms, and AI integration — Faxio Tech delivers production-ready software.',
+    url: 'https://faxio.in/services',
+    images: [{ url: 'https://faxio.in/og-image.svg', width: 1200, height: 630, alt: 'Faxio Tech Services' }],
+  },
 };
 
 const iconMap: Record<string, React.ElementType> = {
@@ -36,9 +61,42 @@ const process = [
   { step: '06', title: 'Growth Support', description: 'Post-launch retainers, feature development, and scaling support as your product grows.' },
 ];
 
+const servicesSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': 'https://faxio.in/services/#webpage',
+  url: 'https://faxio.in/services',
+  name: 'Software Development Services — Faxio Tech',
+  description: 'Web, mobile, Shopify, SaaS, AI development services by Faxio Tech, Ahmedabad, India.',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://faxio.in' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://faxio.in/services' },
+    ],
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, item: { '@type': 'Service', name: 'Web Development', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'Next.js, React, Node.js web application development.' } },
+      { '@type': 'ListItem', position: 2, item: { '@type': 'Service', name: 'Mobile App Development', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'React Native iOS and Android mobile app development.' } },
+      { '@type': 'ListItem', position: 3, item: { '@type': 'Service', name: 'Shopify Development', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'Custom Shopify themes, apps, and headless storefronts.' } },
+      { '@type': 'ListItem', position: 4, item: { '@type': 'Service', name: 'SaaS Development', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'End-to-end SaaS product development with multi-tenant architecture.' } },
+      { '@type': 'ListItem', position: 5, item: { '@type': 'Service', name: 'AI Integration', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'AI chatbots, agents, and automation using OpenAI, Claude, and Gemini APIs.' } },
+      { '@type': 'ListItem', position: 6, item: { '@type': 'Service', name: 'UI/UX Design', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'Research-driven design systems, wireframes, and prototypes.' } },
+      { '@type': 'ListItem', position: 7, item: { '@type': 'Service', name: 'Firebase Integration', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'Firestore, Auth, Cloud Functions, and Firebase hosting setup.' } },
+      { '@type': 'ListItem', position: 8, item: { '@type': 'Service', name: 'E-commerce Development', provider: { '@type': 'Organization', name: 'Faxio Tech' }, areaServed: 'Worldwide', description: 'Feature-rich e-commerce platforms with Stripe/PayPal checkout.' } },
+    ],
+  },
+};
+
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-20 bg-white">
         <div className="container">
@@ -163,7 +221,7 @@ export default function ServicesPage() {
             </div>
             <p className="text-sm text-gray-500 mt-6">
               Every project starts with a free 30-minute scoping call.{' '}
-              <Link href="mailto:gajeraharsh283@gmail.com" className="text-blue-600 hover:underline font-medium">
+              <Link href="/contact" className="text-blue-600 hover:underline font-medium">
                 Book yours now →
               </Link>
             </p>

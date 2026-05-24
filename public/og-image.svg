@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="glowBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <!-- Glow orbs -->
+  <circle cx="200" cy="150" r="300" fill="url(#glowBlue)"/>
+  <circle cx="1050" cy="500" r="250" fill="url(#glowBlue)"/>
+  <!-- Logo mark -->
+  <rect x="80" y="200" width="56" height="56" rx="14" fill="url(#blueGrad)"/>
+  <rect x="95" y="215" width="7" height="26" rx="3.5" fill="white"/>
+  <rect x="95" y="215" width="20" height="7" rx="3.5" fill="white"/>
+  <rect x="95" y="228" width="16" height="7" rx="3.5" fill="white"/>
+  <!-- Brand name -->
+  <text x="152" y="238" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="44" fill="white">Faxio</text>
+  <text x="282" y="238" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="44" fill="#60a5fa">Tech</text>
+  <!-- Headline -->
+  <text x="80" y="330" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="56" fill="white">We Build Digital Products</text>
+  <text x="80" y="400" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="56" fill="url(#blueGrad)">That Scale.</text>
+  <!-- Subtext -->
+  <text x="80" y="460" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="26" fill="#94a3b8">Web Apps · Mobile · Shopify · SaaS · AI Integration</text>
+  <!-- Bottom URL -->
+  <text x="80" y="560" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="22" fill="#475569">faxio.in</text>
+  <!-- Decorative pill -->
+  <rect x="850" y="530" width="270" height="48" rx="24" fill="#1e3a5f" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="985" y="560" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="20" fill="#60a5fa">Available for Projects 2026</text>
+</svg>

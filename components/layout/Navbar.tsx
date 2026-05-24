@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -42,14 +43,15 @@ export default function Navbar() {
       <div className="container">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center
-                            group-hover:bg-blue-700 transition-colors">
-              <Zap className="w-4 h-4 text-white" />
-            </div>
-            <span className="text-xl font-bold font-display text-gray-900">
-              Faxio<span className="text-blue-600"> IT</span>
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.svg"
+              alt="Faxio Tech"
+              width={148}
+              height={38}
+              priority
+              className="h-9 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
