@@ -124,7 +124,7 @@ export default function ContactPage() {
 
               {/* Phone */}
               <a
-                href="tel:+15550000000"
+                href="tel:+917801959924"
                 className="group card p-7 text-center hover:-translate-y-1.5 transition-all
                            duration-300 hover:border-green-200 hover:shadow-lg"
               >
@@ -138,7 +138,7 @@ export default function ContactPage() {
                 </p>
                 <p className="text-sm font-semibold text-gray-900 group-hover:text-green-600
                               transition-colors">
-                  +1 (555) 000-0000
+                  +91 7801959924
                 </p>
               </a>
 

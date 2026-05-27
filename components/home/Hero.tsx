@@ -117,12 +117,19 @@ export default function Hero() {
               className="flex items-center gap-3 mt-10"
             >
               <div className="flex -space-x-2">
-                {['SM', 'DC', 'OR', 'JO', 'PS'].map((initials, i) => (
+                {[
+                  { initials: 'SM', name: 'Sarah Mitchell', gradient: 'from-blue-400 to-indigo-600' },
+                  { initials: 'DC', name: 'David Chen', gradient: 'from-emerald-400 to-teal-600' },
+                  { initials: 'OR', name: 'Oliver Roberts', gradient: 'from-violet-400 to-purple-600' },
+                  { initials: 'JO', name: 'Julia Ortega', gradient: 'from-pink-400 to-rose-600' },
+                  { initials: 'PS', name: 'Priya Sharma', gradient: 'from-amber-400 to-orange-500' },
+                ].map(({ initials, name, gradient }, i) => (
                   <div
                     key={i}
-                    className="w-9 h-9 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600
+                    title={name}
+                    className={`w-9 h-9 rounded-full bg-gradient-to-br ${gradient}
                                flex items-center justify-center text-white text-xs font-bold
-                               border-2 border-white"
+                               border-2 border-white cursor-default`}
                   >
                     {initials}
                   </div>
@@ -134,7 +141,7 @@ export default function Hero() {
                     <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-xs text-gray-500 mt-0.5">Trusted by 40+ clients worldwide</p>
+                <p className="text-xs text-gray-500 mt-0.5">Trusted by 5 happy clients</p>
               </div>
             </motion.div>
           </div>

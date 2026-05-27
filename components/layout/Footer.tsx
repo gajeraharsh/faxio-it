@@ -29,7 +29,7 @@ const socialLinks = [
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
   { icon: Github, href: '#', label: 'GitHub' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/faxio.tech/', label: 'Instagram' },
 ];
 
 export default function Footer() {
@@ -62,10 +62,13 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-blue-400 shrink-0" />
                 hello@faxio.in
               </a>
-              <div className="flex items-center gap-2.5">
+              <a
+                href="tel:+917801959924"
+                className="flex items-center gap-2.5 hover:text-white transition-colors"
+              >
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-                +1 (555) 000-0000
-              </div>
+                +91 7801959924
+              </a>
               <div className="flex items-center gap-2.5">
                 <MapPin className="w-4 h-4 text-blue-400 shrink-0" />
                 Thakkar Ba Nagar, Ahmedabad, Gujarat, India
