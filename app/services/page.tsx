@@ -2,9 +2,77 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   Globe, Smartphone, ShoppingBag, Cloud, Palette, Zap, Flame, Store, CheckCircle2, ArrowRight,
+  Network, BrainCircuit, Workflow, Bot, LayoutDashboard, Plug, RefreshCw, FileText,
 } from 'lucide-react';
 import { services } from '@/lib/data/services';
 import ContactCTA from '@/components/home/ContactCTA';
+
+const aiServices = [
+  {
+    icon: Network,
+    title: 'MCP Server Development',
+    description: 'Build and deploy Model Context Protocol (MCP) servers that give AI models structured access to your databases, APIs, and tools — the backbone of production-ready AI agents.',
+    color: 'text-violet-600',
+    bg: 'bg-violet-50',
+    badge: 'New',
+  },
+  {
+    icon: BrainCircuit,
+    title: 'Autonomous AI Agents',
+    description: 'Custom multi-step AI agents that reason, plan, and take action across your systems — scheduling, web browsing, data processing, and complex decision-making without human input.',
+    color: 'text-purple-600',
+    bg: 'bg-purple-50',
+    badge: 'Popular',
+  },
+  {
+    icon: Workflow,
+    title: 'Business Process Automation',
+    description: 'End-to-end automation of repetitive workflows — customer onboarding, reporting pipelines, invoice processing, and multi-system sync — powered by AI and smart triggers.',
+    color: 'text-pink-600',
+    bg: 'bg-pink-50',
+    badge: null,
+  },
+  {
+    icon: Bot,
+    title: 'AI Chatbot Development',
+    description: 'Smart chatbots for websites and apps using OpenAI, Claude, and Gemini APIs — handling customer support, lead generation, and automated conversations 24/7.',
+    color: 'text-blue-600',
+    bg: 'bg-blue-50',
+    badge: null,
+  },
+  {
+    icon: LayoutDashboard,
+    title: 'AI SaaS Product Development',
+    description: 'End-to-end development of AI-powered SaaS platforms — from idea to launch — with scalable architecture, billing, and intelligent features built in.',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50',
+    badge: null,
+  },
+  {
+    icon: Plug,
+    title: 'AI Integration for Web Apps',
+    description: 'Plug AI capabilities into your existing web applications — enhance functionality, automate workflows, and improve user experience using best-in-class APIs.',
+    color: 'text-cyan-600',
+    bg: 'bg-cyan-50',
+    badge: null,
+  },
+  {
+    icon: RefreshCw,
+    title: 'Workflow Automation (n8n / Zapier)',
+    description: 'Design and deploy no-code/low-code automation flows using n8n, Zapier, and Make — connecting your SaaS tools, CRMs, and databases into seamless automated pipelines.',
+    color: 'text-orange-600',
+    bg: 'bg-orange-50',
+    badge: null,
+  },
+  {
+    icon: FileText,
+    title: 'LLM-Powered Data Pipelines',
+    description: 'Extract, classify, and transform data from unstructured documents, PDFs, and emails using LLMs with retrieval-augmented generation (RAG) for accurate, scalable results.',
+    color: 'text-rose-600',
+    bg: 'bg-rose-50',
+    badge: null,
+  },
+];
 
 export const metadata: Metadata = {
   title: 'Services — Web, Mobile, Shopify, SaaS & AI Development',
@@ -156,6 +224,76 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* AI & Automation Services */}
+      <section className="py-20 bg-gray-950 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px]
+                          bg-blue-600/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-0 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl" />
+          <div
+            className="absolute inset-0 opacity-[0.025]"
+            style={{
+              backgroundImage:
+                'linear-gradient(rgba(99,102,241,1) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,1) 1px, transparent 1px)',
+              backgroundSize: '50px 50px',
+            }}
+          />
+        </div>
+
+        <div className="container relative z-10">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20
+                             text-blue-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+              AI-Powered Services
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold font-display text-white mt-3 mb-4">
+              AI Agents, MCP &{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Automation
+              </span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              From MCP servers and autonomous agents to full business automation — we build
+              AI-powered systems that plug into your stack and run without you lifting a finger.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {aiServices.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={service.title}
+                  className="group relative rounded-2xl border border-white/5 bg-white/3
+                             p-6 hover:-translate-y-1.5 transition-all duration-300
+                             hover:border-white/10 hover:bg-white/5"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className={`w-11 h-11 ${service.bg} rounded-xl flex items-center justify-center`}>
+                      <Icon className={`w-5 h-5 ${service.color}`} />
+                    </div>
+                    {service.badge && (
+                      <span className={`text-xs font-semibold px-2.5 py-1 rounded-full
+                        ${service.badge === 'New'
+                          ? 'bg-violet-500/20 text-violet-300 border border-violet-500/30'
+                          : 'bg-blue-500/20 text-blue-300 border border-blue-500/30'}`}>
+                        {service.badge}
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="font-semibold text-white font-display mb-2 text-sm leading-snug">
+                    {service.title}
+                  </h3>
+                  <p className="text-xs text-gray-400 leading-relaxed">{service.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-20 bg-white">
         <div className="container">
@@ -188,41 +326,36 @@ export default function ServicesPage() {
       {/* Pricing teaser */}
       <section className="py-20 bg-gray-50">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold font-display text-gray-900 mb-4">
               Transparent Pricing
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              We work on project-based fixed-fee engagements and monthly retainers.
-              No surprise billing, no scope creep without your approval.
+              One simple rate for everything we build — no tiers, no surprises, no hidden fees.
             </p>
-            <div className="grid sm:grid-cols-3 gap-5">
-              {[
-                { name: 'MVP Build', price: 'From $15K', desc: 'Validate your idea with a production-ready MVP in 6–8 weeks.' },
-                { name: 'Full Product', price: 'From $40K', desc: 'End-to-end product build from design to deployment.', highlight: true },
-                { name: 'Monthly Retainer', price: 'From $8K/mo', desc: 'Dedicated team hours for ongoing development and iteration.' },
-              ].map((tier) => (
-                <div key={tier.name}
-                     className={`rounded-2xl p-6 text-center border transition-all duration-300
-                                 ${tier.highlight
-                                   ? 'bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-200'
-                                   : 'bg-white border-gray-200 hover:border-blue-200 hover:shadow-md'}`}>
-                  <p className={`text-sm font-medium mb-2 ${tier.highlight ? 'text-blue-200' : 'text-gray-500'}`}>
-                    {tier.name}
-                  </p>
-                  <p className={`text-2xl font-bold font-display mb-3 ${tier.highlight ? 'text-white' : 'text-gray-900'}`}>
-                    {tier.price}
-                  </p>
-                  <p className={`text-sm ${tier.highlight ? 'text-blue-100' : 'text-gray-600'}`}>
-                    {tier.desc}
-                  </p>
-                </div>
-              ))}
+            <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700
+                            text-white p-10 shadow-xl shadow-blue-200">
+              <p className="text-blue-200 text-sm font-semibold uppercase tracking-wide mb-3">
+                Hourly Rate
+              </p>
+              <p className="text-7xl font-bold font-display text-white leading-none mb-1">$8</p>
+              <p className="text-blue-200 text-lg mb-6">/ hour</p>
+              <p className="text-blue-100 text-sm mb-8">
+                Every service, every project — web, mobile, AI, automation, design.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-white text-blue-700
+                           hover:bg-blue-50 font-semibold px-8 py-3 rounded-xl
+                           transition-colors duration-200"
+              >
+                Start Your Project →
+              </Link>
             </div>
             <p className="text-sm text-gray-500 mt-6">
-              Every project starts with a free 30-minute scoping call.{' '}
+              Need a fixed-price quote?{' '}
               <Link href="/contact" className="text-blue-600 hover:underline font-medium">
-                Book yours now →
+                Let's talk →
               </Link>
             </p>
           </div>

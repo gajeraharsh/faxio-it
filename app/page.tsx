@@ -4,6 +4,7 @@ import CompanyIntro from '@/components/home/CompanyIntro';
 import ServicesOverview from '@/components/home/ServicesOverview';
 import AIServices from '@/components/home/AIServices';
 import WhyChooseUs from '@/components/home/WhyChooseUs';
+import Pricing from '@/components/home/Pricing';
 import ClientFirst from '@/components/home/ClientFirst';
 import TechStack from '@/components/home/TechStack';
 import Testimonials from '@/components/home/Testimonials';
@@ -94,6 +95,7 @@ export default function HomePage() {
       <ServicesOverview />
       <AIServices />
       <WhyChooseUs />
+      <Pricing />
       <ClientFirst />
       <TechStack />
       <Testimonials />
